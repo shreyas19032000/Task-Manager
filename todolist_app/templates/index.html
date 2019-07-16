@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    <title>About Us Page</title>
+{% endblock title%}
+
+{% block content %}
+<div class="container" style="text-align: center">
+    <br>
+    <img src="{% static 'images/index.jpg' %}" alt="notes">
+    <img src="{% static 'images/index.jpg' %}" alt="notes">
+    <img src="{% static 'images/index.jpg' %}" alt="notes">
+    <br>
+    <button type="button" style="margin-top: 70px" class="btn btn-primary" src="{% url 'todolist' %}">Learn More</button>
+</div>
+
+{% endblock content %}
